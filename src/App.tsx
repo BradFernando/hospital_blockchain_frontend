@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import PatientForm from './components/PatientForm';
 import BlockList from './components/BlockList';
 
+import Typography from '@mui/material/Typography';
+import AssignmentIcon from '@mui/icons-material/Assignment';
+
 interface Block {
     index: number;
     timestamp: number;
@@ -47,8 +50,19 @@ const App: React.FC = () => {
     };
 
     return (
-        <div className="container mx-auto p-4">
-            <PatientForm onAddBlock={addBlock} />
+        <div className="container mx-auto p-4 ">
+
+            <Typography variant="h3" gutterBottom align="center">
+                <AssignmentIcon sx={{fontSize: 50}}/>
+                Blockchain de Registros de Pacientes
+
+
+            </Typography>
+
+
+            <hr style={{borderTop: "4px solid orange"}}/>
+            <PatientForm onAddBlock={addBlock}/>
+            <hr style={{borderTop: "4px solid orange"}}/>
             <BlockList blocks={blocks} />
         </div>
     );

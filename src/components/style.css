@@ -1,6 +1,7 @@
 /* General styles */
 .container {
     padding: 24px;
+
 }
 
 /* BlockList component styles */
@@ -21,6 +22,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 16px;
+    background-color: #8de2e2; /* El color Emerald que deseas utilizar */
 }
 
 /* PatientForm component styles */
